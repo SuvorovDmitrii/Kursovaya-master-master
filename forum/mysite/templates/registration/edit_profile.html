@@ -1,0 +1,14 @@
+{% extends "base_generate.html" %}
+{% block content %}
+
+<div class="reigis">
+    <div class="regis_cont">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn mr-3 sort-btn">Принять</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

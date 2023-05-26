@@ -1,0 +1,464 @@
+.header {
+    margin:0 auto;
+    transition: .5s;
+    justify-content: center;
+}
+.errorlist{
+    color:red;
+    list-style:none;
+    margin:0 auto;
+}
+.navig {
+    width: 1310px;
+}
+
+.header_filled {
+    background: rgba(0,0,0,0.5);
+    color: white;
+}
+
+.header_filled a {
+    color: white;
+}
+
+.container-vir {
+    margin:0 auto;
+    max-width: 1440px;
+}
+
+.container-text{
+    width:450px;
+}
+
+.container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 66px;
+}
+
+.btn {
+    border-radius: 0;
+    padding: 10px 25px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    align-items: center;
+}
+
+.navig {
+    max-width: 1440px;
+    margin:0;
+}
+
+.navig li {
+    padding: 0 15px;
+
+}
+
+#ulik {
+    text-align: left;
+    margin-left:100px;
+}
+
+/* --- БЛОК 2 --- */
+
+.blok2 {
+    background: #F3F3F3;
+    height: 390px;
+}
+
+.block2_cont {
+    width: 600px;
+}
+
+.blok2-content {
+    text-align: left;
+}
+
+.blok2-content h2{
+    font-size: 40px;
+}
+
+.col-request {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.block2_cont {
+    margin: 10% 15%;
+
+}
+
+/* --- ПОДВАЛ --- */
+
+footer {
+    background: #F3F3F3;
+    list-style:none;
+}
+
+.footer_1 {
+    width: 300px;
+}
+
+.footer_1 p {
+    margin: 20px 0;
+}
+
+.footer_block {
+    display: flex;
+    justify-content: space-between;
+     padding: 25px;
+}
+
+.footer-info{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #878787;
+
+}
+
+footer ul{
+   list-style:none;
+   padding: 0;
+}
+
+footer h4{
+    font-style: italic;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+/* --- РЕГИСТРАЦИЯ --- */
+
+.reg{
+    justify-content:center;
+    align-items: center;
+    display: flex;
+}
+
+.reg table tr {
+    display: grid;
+}
+
+form input {
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #F0F0F0;
+}
+
+label {
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+#but {
+    margin-top: 25px;
+    width: 250px;
+    background: #FFC801;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+#but:hover {
+    background: #C09E21;
+}
+
+#button {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.reigis {
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.size {
+    height: 69vh;
+}
+
+.registration  {
+    display: grid;
+    width: 500px;
+}
+
+.registration p {
+    display: grid;
+}
+
+.helptext {
+    font-size: 12px;
+}
+
+#link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#link a {
+    color: #385A64;
+    text-decoration: none;
+}
+
+.requests_admin table{
+    border: solid 1px black;
+}
+
+.requests_admin table tr td{
+    border: solid 1px black;
+}
+
+/*------------------------------*/
+
+.main {
+    padding: 100px;
+    height: 59vh;
+    margin-top: 50px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container {
+    padding: 10px;
+    margin: 10px;
+    border:1px solid rgba(0,0,0,0.4);
+    border-radius: 25px;
+}
+
+#container img {
+    width: 500px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#container-text {
+    height: 300px;
+    align-items: center;
+    display: flex;
+}
+
+#text {
+    flex-direction: column;
+}
+
+.container-text-sec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+}
+
+.requests {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.request {
+    background: white;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    padding: 15px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    width: 60%;
+}
+
+.request img {
+    width:350px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.req_text {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.request h5 {
+    text-align: center;
+}
+
+#id_text {
+    height: 200px;
+}
+
+.cat_box {
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+}
+
+.cont-card {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.del-btn {
+    display: flex;
+    margin: 0px;
+    width: 100%;
+}
+
+.box-inner {
+    justify-content: space-between;
+    height: 80%;
+}
+
+.text {
+    height: 100%;
+}
+
+.del-btn button {
+    width: 250px;
+    background: #FFC801;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.sort-btn {
+    background: #FFC801;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.sort-box {
+width: 1300px;
+}
+
+.sort {
+    flex-direction: column;
+    display: flex;
+    margin: 0px;
+    width: 20%;
+    padding-bottom: 40px;
+}
+
+.sort-in {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort-in label {
+    margin: 0;
+}
+
+.sort-in #check {
+    width: 10px;
+}
+.copy {
+    text-align: center;
+}
+
+.all-req {
+    width: 1340px;
+}
+
+.all-req td {
+    border: 1px solid black;
+}
+
+.profile {
+    width: 1300px;
+    padding-bottom: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  .requests {
+    width: 100%;
+  }
+
+
+  .request img {
+    width: 220px;
+  }
+
+  .start-img img{
+    width: 100%;
+  }
+}@media screen and (max-width: 900px) {
+  .requests {
+    overflow: scroll;
+  }
+   .block2_cont {
+    width: 90%;
+    margin: 10% 10% 0 5%;
+   }
+
+   .req_text p {
+     font-size: 14px;
+   }
+
+   .footer_block {
+    flex-direction: column;
+   }
+
+   .box-inner {
+    flex-direction: column-reverse;
+    width: 90%;
+   }
+}
+
+@media(max-width: 700px) {
+    #container img {
+        width: 100%;
+    }
+
+    .box-inner {
+        height: 120%;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .container-text {
+        width: 100%;
+    }
+}

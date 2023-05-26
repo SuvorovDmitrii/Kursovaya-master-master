@@ -1,0 +1,86 @@
+{% extends "base_generate.html" %}
+{% block content %}
+{% load static %}
+
+
+<div class="main">
+
+    <div class="profile">
+
+
+        <div class="prof_name">
+            <div class="prof_box">
+                <p class="fs-3">{{ user.first_name }} {{ user.last_name }} {{ user.patron }}</p>
+                <p class="fs-5">+{{ user.number }}</p>
+                <p class="fs-5">{{ user.email }}</p>
+            </div>
+            <div class="buttons pt-4">
+                <a href="{% url 'request_create' %}" class="btn mr-3 sort-btn">Подать запрос</a>
+                <a href="{% url 'edit_profile' %}" class="btn mr-3 sort-btn">Изменить данные</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="sort-box">
+        <form method="get" class="sort">
+            <div class="sort-in">
+                <!--сортировка -->
+                <label for="sort">по дате</label>
+                <input id="check" name="sort" type="checkbox" value="datetime" {{ by_datetime }}>
+            </div>
+            <div class="sort-in">
+                <label for="sort">по статусу</label>
+                <input id="check" name="sort" type="checkbox" value="category" {{ by_category }}>
+            </div>
+            <button type="submit" class="btn mr-3 sort-btn">Сортировать</button>
+        </form>
+    </div>
+    <!--вывод заявки -->
+    {% for req in articles %}
+    <!--            {% if req.person == request.request.user %}-->
+    <div class="container d-flex box-inner" id="container">
+        <div class="d-flex text" id="text">
+            <p>Тема: {{req.theme}}</p>
+            <p>Категория: {{req.type}}</p>
+            <div class="container-text" id='container-text'>
+                <p>{{req.text}}</p>
+
+            </div>
+            <p>{{req.adress}}</p>
+
+            <div class="container-text-sec">
+                <div class="datetime">{{req.datetime}}
+                    <p>
+                        Статус:
+                        {% for i in req.getStatus %}
+                        {{ i.category }}
+                        {% endfor %}
+                    </p>
+                </div>
+              
+
+                <div class="123">
+                    <div class="del-btn">
+                        <form action = "{% url 'remove_order' req.id %}" method="POST">
+                            {% csrf_token %}
+                            <button type="submit" value="Удалить">Удалить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% if req.img %}
+        <div class="start-img">
+            <img src="{{ req.img.url }}">
+        </div>
+        {% endif %}
+    </div>
+    <!--            {% endif %}-->
+    {% endfor %}
+
+
+</div>
+
+{%endblock%}

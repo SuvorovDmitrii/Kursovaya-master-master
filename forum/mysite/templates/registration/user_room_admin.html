@@ -1,0 +1,45 @@
+{% extends "base_generate.html" %}
+{% load static %}
+{% block content %}
+
+<div class="main">
+
+    <div class="sort-box">
+        <form method="get" class="sort">
+        <div class="sort-in">
+            <!--сортировка -->
+            <label for="sort">по дате</label>
+            <input id="check" name="sort" type="checkbox" value="datetime" {{ by_datetime }}>
+        </div>
+        <div class="sort-in">
+            <label for="sort">по типу</label>
+            <input id="check" name="sort" type="checkbox" value="type" {{ by_type }}>
+        </div>
+        <button type="submit" class="btn mr-3 sort-btn">Сортировать</button>
+    </form>
+    </div>
+
+
+    <table class="all-req">
+        <tr>
+            <td>Тип заявки</td>
+            <td>Время подачи заявки</td>
+            <td>Описание заявки</td>
+            <td>Имя пользователя</td>
+            <td>Фамилия пользователя</td>
+            <td>ID пользователя</td>
+        </tr>
+        {% for req in articles %}
+        <tr>
+                <td>{{req.type}}</td>
+                <td>{{req.datetime}}</td>
+                <td>{{req.text}}</td>
+                <td>{{req.person.first_name}}</td>
+                <td>{{req.person.last_name}}</td>
+                <td>{{req.person.id}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</div>
+{% endblock %}
